@@ -11,7 +11,7 @@ const Header = () => {
             <button className={styles.header__logo_btn}>
               <Logo className={styles.header__logo_icon} />
             </button>
-            <Link className={styles.header__logo_text} to="/">
+            <Link className={styles.header__logo_text} to="/nodejs-course">
               NODE JS
             </Link>
           </div>
