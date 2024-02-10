@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  return <>Node JS Course</>;
+  return <div>Node JS Course</div>;
 }
 
 export default App;
