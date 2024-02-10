@@ -1,0 +1,31 @@
+.header {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-inline: 20px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &_btn {
+      height: 30px;
+      width: fit-content;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    &_icon {
+      height: 100%;
+    }
+      
+    &_text {
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+}
