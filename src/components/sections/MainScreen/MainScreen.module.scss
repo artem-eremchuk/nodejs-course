@@ -1,0 +1,60 @@
+.main__screen {
+  position: relative;
+  background: url('/public/images/nodejs-background-image.jpg') no-repeat center / cover;
+
+  &::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: $pseudo-bg;
+    opacity: 0.4;
+  }
+
+  & > * {
+    position: relative;
+    z-index: 10;
+  }
+  
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100vh - 4.375rem);
+    padding: 3.125rem 0;
+    color: $secondary-text;
+  }
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  &_title, &_description {
+    text-align: center;
+    z-index: 1000;
+  }
+
+  &_title {
+    font-size: 2.5rem;
+    font-weight: $text-semi-bold-weight;
+    color: $electric-blue;
+  }
+
+  &_description {
+    font-size: 1.5rem;
+    font-weight: $text-medium-weight;
+  }
+
+  &_link {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid $secondary-border-color;
+    color: $secondary-link-color;
+    text-transform: uppercase;
+  }
+}

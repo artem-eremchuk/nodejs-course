@@ -1,4 +1,5 @@
 import styles from "./Sidebar.module.scss";
+import { useRef } from "react";
 import { ImCross } from "react-icons/im";
 
 interface ISidebar {
@@ -7,8 +8,13 @@ interface ISidebar {
 }
 
 const Sidebar: React.FC<ISidebar> = ({ isSidebarOpen, onSidebarClose }) => {
+  const sidebarRef = useRef<HTMLDivElement>(null);
+
   return (
-    <div className={`${styles.sidebar} ${isSidebarOpen && styles.open}`}>
+    <div
+      className={`${styles.sidebar} ${isSidebarOpen && styles.open}`}
+      ref={sidebarRef}
+    >
       <div className={styles.sidebar__header}>
         <div className={styles.sidebar__header_title}>Список тем</div>
         <button

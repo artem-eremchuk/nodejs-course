@@ -9,7 +9,7 @@ const Header: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
 
   const handleSidebarClose = () => {
-    setIsSidebarOpen(!isSidebarOpen);
+    setIsSidebarOpen(false);
   };
 
   return (
