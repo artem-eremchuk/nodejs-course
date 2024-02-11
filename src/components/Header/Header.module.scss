@@ -1,4 +1,13 @@
+$smoky-black: #0B0C10;
+$dark-gunmetal: #1F2833;
+$silver-sand: #C5C6C7;
+$electric-blue: #66FCF1;
+$keppel: #45A29E;
+$white: #FFFFFF;
+
 .header {
+  background: $smoky-black;
+
   &__wrapper {
     display: flex;
     align-items: center;
@@ -6,26 +15,36 @@
     padding-inline: 20px;
   }
 
-  &__logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
+  &__burger {
     &_btn {
-      height: 30px;
-      width: fit-content;
       background: transparent;
       border: none;
       cursor: pointer;
     }
 
     &_icon {
+      font-size: 25px;
+      color: $electric-blue;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    
+    &_icon {
+      width: 30px;
       height: 100%;
     }
-      
+    
     &_text {
-      text-decoration: none;
+      display: block;
+      white-space: nowrap;
+      font-size: 18px;
       font-weight: 700;
+      color: $white;
     }
   }
 }
