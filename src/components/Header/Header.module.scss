@@ -1,12 +1,5 @@
-$smoky-black: #0B0C10;
-$dark-gunmetal: #1F2833;
-$silver-sand: #C5C6C7;
-$electric-blue: #66FCF1;
-$keppel: #45A29E;
-$white: #FFFFFF;
-
 .header {
-  background: $smoky-black;
+  background: $header-bg;
 
   &__wrapper {
     display: flex;
@@ -44,7 +37,7 @@ $white: #FFFFFF;
       white-space: nowrap;
       font-size: 18px;
       font-weight: 700;
-      color: $white;
+      color: $secondary-text;
     }
   }
 }

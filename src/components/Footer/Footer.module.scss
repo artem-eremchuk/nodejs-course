@@ -1,8 +1,17 @@
 .footer {
+  background: $footer-bg;
+
   &__wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 50px;
     padding-inline: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: $text-medium-weight;
+    color: $secondary-text;
   }
 }
