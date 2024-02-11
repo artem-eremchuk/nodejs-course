@@ -42,4 +42,8 @@
       color: $electric-blue;
     }
   }
+
+  @media (orientation: landscape) {
+    width: 45%;
+  } 
 }
