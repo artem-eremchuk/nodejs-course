@@ -1,22 +1,25 @@
 .header {
   background: $header-bg;
+  position: relative;
 
   &__wrapper {
     display: flex;
     align-items: center;
-    height: 70px;
-    padding-inline: 20px;
+    height: 4.375rem;
+    padding-inline: 1.25rem;
   }
 
   &__burger {
     &_btn {
+      display: flex;
+      align-items: center;
       background: transparent;
       border: none;
       cursor: pointer;
     }
 
     &_icon {
-      font-size: 25px;
+      font-size: 1.563rem;
       color: $electric-blue;
     }
   }
@@ -24,19 +27,19 @@
   &__logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     text-decoration: none;
     
     &_icon {
-      width: 30px;
+      width: 1.875rem;
       height: 100%;
     }
     
     &_text {
       display: block;
       white-space: nowrap;
-      font-size: 18px;
-      font-weight: 700;
+      font-size: 1.125rem;
+      font-weight: $text-bold-weight;
       color: $secondary-text;
     }
   }
