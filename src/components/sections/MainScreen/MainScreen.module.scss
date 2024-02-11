@@ -21,7 +21,7 @@
   &_wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: calc(100vh - 4.375rem);
     padding: 3.125rem 0;
@@ -31,7 +31,7 @@
   &_text {
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
+    gap: 1.25rem;
   }
 
   &_title, &_description {
