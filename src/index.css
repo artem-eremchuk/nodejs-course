@@ -14,12 +14,12 @@ html {
   display: flex;
   flex-direction: column;
   height: -webkit-fill-available;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .main {
   flex: 1;
-  margin-top: 70px;
+  margin-top: 4.375rem;
 }
 
 .container {
