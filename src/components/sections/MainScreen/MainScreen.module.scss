@@ -1,7 +1,7 @@
 .main__screen {
   position: relative;
-  background: url('/public/images/nodejs-background-image.jpg') no-repeat center / cover;
-
+  background: url('/public/images/nodejs-background-img.jpg') no-repeat center / cover;
+  
   &::before{
     position: absolute;
     top: 0;
@@ -10,9 +10,9 @@
     width: 100%;
     height: 100%;
     background: $pseudo-bg;
-    opacity: 0.4;
+    opacity: 0.7;
   }
-
+  
   & > * {
     position: relative;
     z-index: 10;
@@ -23,9 +23,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: calc(100vh - 4.375rem);
-    padding: 3.125rem 0;
+    height: calc(100vh - 120px);
     color: $secondary-text;
+
+    @media (orientation: landscape) {
+      justify-content: space-evenly;
+    } 
   }
 
   &_text {

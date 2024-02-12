@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <div className="container">
         <div className={styles.footer__wrapper}>
           <Link
@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

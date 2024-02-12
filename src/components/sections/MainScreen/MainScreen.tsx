@@ -11,7 +11,7 @@ const MainScreen = () => {
             <p className={styles.main__screen_description}>В поискe знаний?</p>
           </div>
           <Link className={styles.main__screen_link} to={""}>
-            Тыкай!
+            Жми
           </Link>
         </div>
       </div>
