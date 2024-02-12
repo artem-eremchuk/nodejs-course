@@ -3,11 +3,7 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
-}
-
-html, body {
   font-family: Roboto, sans-serif;
-  width: 100%;
 }
 
 html {
@@ -24,7 +20,7 @@ html {
 .main {
   flex-grow: 1;
   overflow: scroll;
-  margin-top: 4.375rem;
+  /* margin-top: 4.375rem; */
 }
 
 .header, .main, .footer {
