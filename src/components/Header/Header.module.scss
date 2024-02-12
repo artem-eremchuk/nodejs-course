@@ -1,6 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background: $header-bg;
-  position: relative;
+  z-index: 1000;
 
   &__wrapper {
     display: flex;

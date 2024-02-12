@@ -1,5 +1,5 @@
 import styles from "./Sidebar.module.scss";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { ImCross } from "react-icons/im";
 
 interface ISidebar {
@@ -9,6 +9,25 @@ interface ISidebar {
 
 const Sidebar: React.FC<ISidebar> = ({ isSidebarOpen, onSidebarClose }) => {
   const sidebarRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (e: MouseEvent) => {
+      e.stopPropagation();
+
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(e.target as Node)
+      ) {
+        {
+          onSidebarClose();
+        }
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => document.removeEventListener("click", handleOutsideClick);
+  }, [onSidebarClose]);
 
   return (
     <div

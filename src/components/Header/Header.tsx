@@ -8,10 +8,6 @@ import Sidebar from "../Sidebar/Sidebar";
 const Header: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
 
-  const handleSidebarClose = () => {
-    setIsSidebarOpen(false);
-  };
-
   return (
     <header className={styles.header}>
       <div className="container">
@@ -19,11 +15,14 @@ const Header: React.FC = () => {
           <div className={styles.header__logo}>
             <Sidebar
               isSidebarOpen={isSidebarOpen}
-              onSidebarClose={handleSidebarClose}
+              onSidebarClose={() => setIsSidebarOpen(false)}
             />
             <button
               className={styles.header__burger_btn}
-              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsSidebarOpen(!isSidebarOpen);
+              }}
             >
               <GiHamburgerMenu className={styles.header__burger_icon} />
             </button>
