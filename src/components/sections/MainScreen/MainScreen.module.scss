@@ -1,6 +1,8 @@
 .main__screen {
   position: relative;
   background: url('/public/images/nodejs-background-img.jpg') no-repeat center / cover;
+  height: 100%;
+  padding: 70px 0 50px;
   
   &::before{
     position: absolute;
