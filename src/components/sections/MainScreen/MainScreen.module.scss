@@ -17,7 +17,7 @@
   
   & > * {
     position: relative;
-    z-index: 10;
+    z-index: 5;
   }
   
   &_wrapper {
@@ -62,5 +62,9 @@
     border: 2px solid $secondary-border-color;
     color: $secondary-link-color;
     text-transform: uppercase;
+  }
+
+  @media (orientation: landscape) and (max-width: 992px){
+    padding: 70px 0 0;
   }
 }

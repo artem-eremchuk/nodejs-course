@@ -3,8 +3,9 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
   background: $footer-bg;
-  
+
   &__wrapper {
     display: flex;
     justify-content: center;
@@ -17,5 +18,9 @@
     font-weight: $text-medium-weight;
     color: $secondary-text;
     text-decoration: none;
+  }
+
+  @media (orientation: landscape) and (max-width: 992px){
+    position: relative;
   }
 }

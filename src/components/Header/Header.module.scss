@@ -6,11 +6,6 @@
   z-index: 100;
   background: $header-bg;
 
-  // @media (orientation: landscape) and (max-width: 992px){
-  //   width: 70px;
-  //   height: 100%;
-  // }
-
   &__wrapper {
     display: flex;
     align-items: center;
@@ -52,4 +47,9 @@
       color: $secondary-text;
     }
   }
+
+  // @media (orientation: landscape) and (max-width: 992px){
+  //   width: 70px;
+  //   height: 100%;
+  // }
 }
